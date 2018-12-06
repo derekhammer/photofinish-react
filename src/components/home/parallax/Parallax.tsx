@@ -5,29 +5,27 @@ function Parallax(){
   let ships: number[] = AssetChoice(12);
   
   return(
-    <div className="Parallax">
-      <div style="background-image:src('../../../../assets/images/level_art/{background}.png')">
-        <div className="foreground">
-          <marquee behavior="scroll" direction="right" scrollamount={ships[0]}>
-          </marquee>
-          <marquee behavior="scroll" direction="right" scrollamount={ships[1]}>
-          </marquee>
-          <marquee behavior="scroll" direction="right" scrollamount={ships[2]}>
-          </marquee>
-          <marquee behavior="scroll" direction="right" scrollamount={ships[3]}>
-          </marquee>
-        </div>
-      </div>
-    </div>
+    React.createElement('div', { className: 'parallax-component' },
+      React.createElement('div', { className: 'parallax-background'},
+      [
+        React.createElement('marquee',{ behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
+          React.createElement('img', {},'')),
+        React.createElement('marquee', { behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
+          React.createElement('img', {}, '')),
+        React.createElement('marquee', { behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},'')
+      ]
+    )
+    );
   );
 }
+export default Parallax;
 
 function AssetChoice(limit:number){
   const assetMax: number = limit; 
-  let assetArray: number[];
+  let assetArray: number[] = [];
   for(assetArray.length < 4){
     let newNumber: number = Math.round(Math.random()*assetMax);
-    if(newNumber < AssetMax && NewNumber != 0){
+    if(newNumber < assetMax && newNumber != 0){
       assetArray.push(newNumber);
     }else{
       assetArray.push(1);
