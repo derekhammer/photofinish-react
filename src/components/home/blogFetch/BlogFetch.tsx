@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Home.css';
+import './BlogFetch.css';
 
 class BlogFetch extends React.Component {
   render() {
