@@ -1,3 +1,20 @@
-img {
-  transform: rotate(90);
+.parallax-component{
+    background-image: url('../../../assets/images/level_art/1.png');
+    transform:rotate(90deg);
+    z-index: -1
+}
+.parallax-background{
+  overflow: hidden;
+  position: relative;
+}
+.parallax-background div {
+  display: block;
+  width: 100%;
+  position: absolute;
+  
+}
+.ship{
+  width: 10%;
+  height: 10%;
+  z-index: 1;
 }

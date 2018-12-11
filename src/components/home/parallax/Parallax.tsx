@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './Parallax.css';
+import BG1 from '../../../assets/images/level_art/1.png';
+import BG2 from '../../../assets/images/level_art/2.png';
 import Gif1 from '../../../assets/images/ships/1.gif';
 import Gif2 from '../../../assets/images/ships/2.gif';
 import Gif3 from '../../../assets/images/ships/3.gif';
@@ -19,18 +21,19 @@ function Parallax(){
   let ship1: string = "Gif"+ships[0].toString();
   console.log(Gif1);
   return(
-    React.createElement('div', { className: 'parallax-component' },
-      React.createElement('div', { className: 'parallax-background'},
-      [
-        React.createElement('marquee',{ behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
-          <img className="ship" src={Gif5} />),
-        React.createElement('marquee', { behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
-          <img className="ship" src={Gif12} />),
-        React.createElement('marquee', { behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
-          <img className="ship" src={Gif1} />)
-      ]
-    )
-    )
+    <div className="parallax-component">
+      <div className="parallax-background">
+        <span className="ships-scrolling">
+          <img className="ship" src={Gif5}/>
+        </span>
+        <span className="ships-scrolling">
+          <img className="ship" src={Gif3}/>
+        </span>
+        <span className="ships-scrolling">
+          <img className="ship" src={Gif10}/>
+        </span>
+      </div>
+    </div>
   );
 }
 export default Parallax;
@@ -49,3 +52,21 @@ function AssetChoice(limit:number){
   return assetArray;
 }
 
+
+// This section needs to be redone. Currently it will not load any changes for img's, saying it is an invalid format.
+// React.createElement('div', { className: 'parallax-component' },
+//   React.createElement('div', { className: 'parallax-background'},
+//   [
+//     React.createElement('marquee',{ behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
+//       <img className="ship" src={Gif5} />),
+//     React.createElement('marquee', { behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
+//       <img className="ship" src={Gif12} />),
+//     React.createElement('marquee', { behavior: 'scroll', direction: 'right', scrollamount: Math.round(Math.random()*15)},
+//       <img className="ship" src={Gif1} />)
+//   ]
+// )
+// )
+
+// function SpeedLimit(){
+//   const
+// }
