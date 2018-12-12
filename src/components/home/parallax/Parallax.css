@@ -1,13 +1,33 @@
-.ship{
-  width: 10%;
-  height: 10%;
+@media only screen and (max-width: 992px) {
+  .ship{
+  width: 25%;
+  height: 55%;
   z-index: 1;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .ship{
+  width: 20%;
+  height: 50%;
+  margin-left: auto;
+  z-index: 1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ship{
+  width: 15%;
+  height: 55%;
+  margin-left: auto;
+  z-index: 1;
+  }
 }
 .parallax-component{
     z-index: -1;
     display:flex;
 }
 .parallax-background{
+  margin-left: auto;
+  margin-right: auto;
   background-image: url('../../../assets/images/level_art/1.png');
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -16,8 +36,7 @@
 }
 .parallax-background div {
   position: absolute;
-  
+
 }
 .ship-scrolling{
 }
-  
