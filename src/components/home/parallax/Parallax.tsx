@@ -43,7 +43,7 @@ function Parallax(){
   let bgchoice: any = background[0];
   return(
     <div className="parallax-component">
-      <div className="parallax-background" >
+      <div className="parallax-background">
         <span className="ships-scrolling">
           <img className="ship" src={ship1}/>
         </span>

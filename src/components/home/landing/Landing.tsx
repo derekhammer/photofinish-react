@@ -5,7 +5,11 @@ class Landing extends React.Component {
   render(){
     return(
       <div className="Landing">
-        <p>Landing Works!</p>
+        <div className="text">
+        </div>
+        <div className="trailer">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jdszkrSARtY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
       </div>
     )
   }
