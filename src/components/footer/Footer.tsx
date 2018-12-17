@@ -5,7 +5,9 @@ class Footer extends React.Component {
   render(){
     return(
       <div className="Footer">
-        <p>Footer Works!</p>
+        <a href="https://github.com/Hanleyjames/photofinish-react">Github</a>
+        <a href="https://store.steampowered.com/app/943950/Photo_Finish/">Steam</a>
+        
       </div>
     );
   }
