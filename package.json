@@ -2,6 +2,10 @@
   "name": "photofinish-react",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  },
   "dependencies": {
     "@types/react-redux": "^6.0.10",
     "@types/react-router": "^4.4.1",
