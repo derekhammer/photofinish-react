@@ -35,7 +35,7 @@ import Gif11 from '../../../assets/images/ships/11.gif';
 import Gif12 from '../../../assets/images/ships/12.gif';
 
 function Parallax(){
-  let background: any[] = AssetChoice(20);
+  let background: any[] = BackgroundAssetChoice(20);
   let ships: any[] = ShipAssetChoice(11);
   let ship1: any = ships[0];
   let ship2: any = ships[1];
@@ -80,7 +80,7 @@ function ShipAssetChoice(limit:number){
   return assetArray;
 }
 
-function AssetChoice(limit:number){
+function BackgroundAssetChoice(limit:number){
   const assetMax: number = limit;
   const assetList: any[] = [BG1, BG2, BG3, BG4, BG5, BG6, BG7, BG8, BG9, BG10, BG11, BG12, BG13, BG14, BG15, BG16, BG17, BG18, BG19, BG20, BG21];
   let assetArray: any[] = [];
