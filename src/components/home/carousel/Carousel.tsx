@@ -23,10 +23,12 @@ class Carousel extends React.Component {
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true
+      autoplay: true,
+      variableWidth: true,
+      arrows: false
     };
     return(
-      <Slider {...settings}>
+      <Slider className="bubby" {...settings}>
         <div>
           <img src={CharacterOne} />
           <p>Radio Skull</p>

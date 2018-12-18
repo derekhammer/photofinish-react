@@ -8,3 +8,14 @@
 @media only screen and (min-width: 1200px){
 
 }
+
+.slick-slide{
+    width: 270px;
+    }
+
+.bubby{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+/* snurt */
+}
