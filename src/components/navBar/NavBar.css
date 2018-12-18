@@ -1,0 +1,10 @@
+.NavBar{
+  display: flex;
+  float: right;
+}
+nav{
+  justify-content: flex-end;
+}
+.logo{
+  padding: 20px;
+}
